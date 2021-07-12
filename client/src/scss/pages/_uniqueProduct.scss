@@ -1,0 +1,61 @@
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include respond(tab-port) {
+       display: block;
+     }
+    &__img {
+        width: 30rem;
+        height: auto;
+        @include respond(tab-port) {
+            width: 20rem;
+            text-align: center;
+   
+          }   
+    }
+    &__box1 {
+        width: 55%;
+        @include respond(tab-port) {
+            width: 100%;
+            text-align: center;
+   
+      }
+    }
+    &__box2 {
+        position: relative;
+    &-header {
+     position: absolute;
+     width: 7rem;
+     top: 40%;
+     left: 21%;
+     transform: rotate( 339deg );
+    }
+}
+}
+
+.features {
+&__header {
+    color: $rfuw-text-color;
+    background-color: $rfuw-color-blue;
+}
+&__info-box {
+    width: 60%;
+    margin: 0 auto;
+    @include respond(tab-land) {
+        width: 100%;
+        font-size: 1.15rem;
+    }
+}
+
+&__info {
+    display: flex;
+    justify-content: space-between;
+}
+}
+.download__links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+

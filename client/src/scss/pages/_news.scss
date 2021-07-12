@@ -1,0 +1,46 @@
+.news {
+    &__container {
+
+    height: 100vh;
+    overflow: auto;
+
+    }
+    &__card {
+        width: 21rem;
+        min-height: 27rem;
+        @include respond(phone) {
+            width: 20rem;
+      
+          }
+        &--body {
+            padding: 0 .5rem!important;
+            width: 90%;
+            margin: 0 auto;
+            border-bottom: 1px solid $rfuw-color-blue;
+        }
+
+        &--img {
+            width: 100%;
+            height: 12rem;
+        }
+        &--header {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+        }
+        &--link {
+            color: $rfuw-color-blue !important;
+        }
+        &--icon {
+            color: $rfuw-color-blue !important;
+        }
+        &--text {
+            overflow-x: auto;
+            height: 5rem;
+           }
+       }
+   }
+       
+      

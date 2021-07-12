@@ -1,0 +1,77 @@
+.reusable__header {
+    height: 63vh;
+    @include respond(tab-port) {
+     height: 30vh;
+    }
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+    background-size: cover;
+    background-position: bottom;
+  &-text {
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+    font-weight: 700;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: $rfuw-text-color;
+    -webkit-animation: moveInLeft1 .5s ease-out;
+            animation: moveInLeft1 .5s ease-out;
+    backface-visibility: hidden;
+  }
+
+}
+
+.header__text {
+    color: $rfuw-color-blue !important;
+    font-weight: 700;
+}
+.par__text--white {
+  color: $rfuw-text-color;
+  font-weight: 700;
+}
+
+.form_input-danger {
+  color: $rfu-danger-color; }
+
+.form_input-success {
+  color: $rfu-success-color; }
+
+.form {
+&__button-box {
+  display: flex;
+  justify-content: center;
+}
+&__button-submit {
+  width: 40%;
+  font-size: 1.4rem;
+}
+}
+.center__obj {
+  margin: 0 auto;
+}
+.border__bottom {
+  border-bottom: 1px solid black;
+  padding: 1rem;
+}
+.rfuw_center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.form_icons {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.alerts{
+  text-align: center !important;
+  font-size: 1.3rem;
+}
+.upload  { 
+   &__img {
+  width: 99%;
+  height: auto;
+}
+}

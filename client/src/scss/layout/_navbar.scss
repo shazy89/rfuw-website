@@ -1,0 +1,71 @@
+.rfu_navbar {
+    justify-content: flex-end;
+    @include respond(tab-land) {
+     margin: 0 !important;
+    }
+    &__links {
+        display: flex;
+        justify-content: space-between;
+    } 
+    &__link {
+        width: 16.6%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
+}
+.navbar_box_shadow {
+    box-shadow: -19px 1px 25px 0px #00000030;
+}
+.navbar__item {
+  display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.underline-navbar{
+  
+    color: $rfuw-color-blue !important;
+    border-bottom: 2px solid $rfuw-color-blue !important;
+  }
+  .active__dropdown {
+    color: $rfuw-text-color-dark !important;
+    text-decoration: none;
+    background-color: $color-light-grey
+  }
+
+  .navbar__link {
+    transition: all .1s ease-in;
+    backface-visibility: hidden;
+    color: $rfuw-text-color-dark !important;
+    border-bottom: 2px solid #f8f9fa;
+    @include respond(tab-land) {
+      margin: 0 !important;
+     }
+      &:active, &:hover {
+        color: $rfuw-color-blue !important;
+        border-bottom: 2px solid $rfuw-color-blue !important;
+      }
+      &:link,&:visited {
+        text-decoration: none;
+        color: rgb(32, 32, 32);
+      }
+  }
+
+       
+.logo {width: 4rem; height: 4rem;}
+
+.navbar__item-dropdown {
+  padding: .5rem 0;
+  color: #535353 !important;
+  display: flex;
+  justify-content: center;
+
+}
+.dropdown-menu {
+  min-width: 23rem;
+  @include respond(tab-land) {
+    min-width: 18rem;
+  }
+}

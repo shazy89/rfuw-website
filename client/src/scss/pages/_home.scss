@@ -1,0 +1,218 @@
+.home__header {
+  height: 80vh;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(rgb(187, 187, 187), 0.8),
+      rgba(rgb(143, 143, 143), 0.8)
+    ),
+    url("https://res.cloudinary.com/daiaiwq1q/image/upload/c_scale,w_1800/v1622480792/Home/weather-radar-station-4-3_cbkejw.jpg");
+  @include respond(phone) {
+    background-image: linear-gradient(
+        to right bottom,
+        rgba(rgb(187, 187, 187), 0.8),
+        rgba(rgb(143, 143, 143), 0.8)
+      ),
+      url("https://res.cloudinary.com/daiaiwq1q/image/upload/c_scale,w_500/v1622480792/Home/weather-radar-station-4-3_cbkejw.jpg");
+  }
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  &-text-box {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    @include respond(phone) {
+      width: 80%;
+    }
+  }
+  &-primary {
+    color: $rfuw-text-color;
+    backface-visibility: hidden;
+    width: 80%;
+    margin: 0 auto;
+    @include respond(phone) {
+      width: 90%;
+    }
+    &--sub {
+      display: block;
+      text-align: center;
+      font-weight: 700;
+      letter-spacing: 1px;
+      animation: moveInRight 1s ease-out;
+    }
+    &--main {
+      text-align: center;
+      display: block;
+      font-weight: 400;
+      animation: moveInLeft 1s ease-out;
+      @include respond(phone) {
+        font-size: 1.6rem !important;
+      }
+    }
+  }
+}
+.latest {
+  &__box {
+    display: flex;
+    justify-content: center;
+    background-color: $rfuw-color-blue;
+    color: $rfuw-text-color;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    &-text {
+      display: flex;
+      margin-bottom: 0 !important;
+    }
+    &-info {
+      @include respond(phone) {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+      }
+    }
+  }
+}
+.welcome {
+  &__header {
+    color: $rfuw-color-blue;
+  }
+  &__text {
+    width: 70%;
+
+    text-align: center;
+    margin: 0 auto;
+    color: $rfuw-text-color-dark;
+    letter-spacing: 0.8px;
+    line-height: 2rem;
+    @include respond(phone) {
+      width: 95%;
+      line-height: 1.1rem;
+      letter-spacing: inherit !important;
+    }
+  }
+  &__slider--card {
+    width: 70%;
+    height: 30rem;
+    margin: 0 auto;
+    @include respond(tab-land) {
+      width: 90%;
+
+    }
+    @include respond(phone) {
+      width: 70%;
+
+    }
+  }
+  &__slider--image {
+    margin: 0 auto;
+    width: 65%;
+    height: 40%;
+    @include respond(phone) {
+      width: 100%;
+
+    }
+  }
+  &__slider--title {
+    color: $rfuw-color-blue;
+    font-weight: 700;
+  }
+  &__slider--text {
+    display: block;
+    margin: 0 auto;
+  }
+  &__slider--button {
+
+    margin: 0 auto;
+  }
+}
+
+.slick-dots {
+  bottom: -4rem;
+}
+.slick-dots li button:before {
+  font-size: 12px !important;
+}
+
+.slick-dots li.slick-active button:before {
+  opacity: 1;
+  color: $rfuw-color-blue !important;
+}
+.slick-dots li button:hover:before {
+  color: $rfuw-color-blue !important;
+}
+.upcoming {
+  background-color: $background-light-grey;
+  &__container {
+    min-height: 80vh;
+  }
+  &__box-1 {
+    height: 70vh;
+    padding: 1rem;
+  }
+  &__sec-1 {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-size: cover;
+    background-position: bottom;
+    &--text {
+      position: absolute;
+      bottom: 3px;
+      left: 3.4rem;
+      @include respond(phone) {
+        left: 1.4rem;
+
+         }
+      &-header {
+        font-weight: 700;
+        color: $rfuw-color-blue-light;
+      }
+      &-par {
+        width: 70%;
+        color: white !important;
+      }
+    }
+  }
+  &__box-2 {
+    height: 70vh;
+    padding: 1rem;
+  }
+  &__sec-2 {
+    width: 100%;
+    height: 100%;
+    &--box1 {
+      height: 60%;
+      width: 100%;
+      position: relative;
+      background-size: cover;
+      background-position: bottom;
+    }
+    &--box2 {
+      height: 40%;
+      width: 100%;
+      padding-top: 10px;
+    }
+  }
+}
+
+.event-box-small {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: bottom;
+}
+.event-box-big {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: bottom;
+}
+
+.row_options {
+  height: 100%;
+}

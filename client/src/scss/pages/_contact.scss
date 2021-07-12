@@ -1,0 +1,34 @@
+.contact {
+ 
+    &__form-box {
+        width: 70%;
+        margin: 0 auto;
+    }
+    &__info--box {
+        display: flex;
+        justify-content: space-around;
+        height: 100%;
+
+    }
+    &__info--box1 {
+      
+        display: flex;
+        align-items: center;
+        @include respond(tab-land) {
+            padding: .7rem !important;
+         }
+    }
+    &__form-text {
+        color: $rfuw-text-color-dark;
+    }
+    &__address {
+        height: 40vh;
+        @include respond(tab-land) {
+            height: 20vh;
+         }
+        background-color: $background-light-grey;
+    }
+    &__text {
+        margin-bottom: 0 !important;
+    }
+}

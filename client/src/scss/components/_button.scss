@@ -1,0 +1,103 @@
+.header {
+ &__button {
+    width: 10vw;
+    @include respond(phone) {
+        width: 80% !important;
+     }
+    box-shadow: 4px 5px 10px -6px rgba(0, 0, 0, 0.562);
+    transition: all .3s ease;
+    background-color: $rfuw-color-blue ;
+    border: 1px solid $rfuw-color-blue;
+    border-radius: 4px;
+     &:link, &:visited {
+       
+         border: none;
+         text-decoration: none !important;
+         color: #ffffff !important;
+         display: inline-block;
+
+        }
+        &:active, &:hover {
+            transform: translateY(2px);
+            background-color: $rfuw-color-blue-light;
+            border: none;
+            box-shadow: 3px 4px 11px -5px #000;
+        }
+        &--animated {
+            animation: moveInBottom .3s ease-out .75s;
+            animation-fill-mode: backwards;
+        }
+    }
+   }
+
+.rfu_cta_button {
+    &:link,
+    &:visited {
+        display: inline-block;
+        color: $rfuw-text-color;
+        text-decoration: none;
+        transition: all 0.4s;
+    }
+    &:hover,
+    &:active {
+        color: $color-light-grey;
+        transform: translate(0, -3px);
+    }
+
+}
+.rfu_dropdown--link {
+    &:link,
+    &:visited {
+        display: flex;
+        width: 100%;
+        color: $rfuw-text-color-dark;
+        text-decoration: none;
+        transition: all 0.4s;
+
+    }
+    &:hover,
+    &:active {
+        color: #000000;
+        background-color: $color-light-grey
+
+    }
+}
+.dropdown-item.active, .dropdown-item:active {
+    color: $rfuw-text-color-dark !important;
+    text-decoration: none;
+    background-color: $color-light-grey
+}
+
+.rfu_button {
+    box-shadow: 4px 5px 10px -6px rgba(0, 0, 0, 0.562);
+    transition: all .3s ease;
+    background-color: $rfuw-color-blue ;
+    border: none;
+     &:link, &:visited {
+       
+         border: none;
+         text-decoration: none !important;
+         color: #ffffff !important;
+         display: inline-block;
+
+        }
+        &:active, &:hover {
+            transform: translatey(-.1rem);
+            background-color: $rfuw-color-blue-light;
+            border: none;
+            box-shadow: 3px 4px 11px -5px #000;
+        }
+    &--center {
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+        width: 10vw;
+        @include respond(phone) {
+            width: 80%;
+         }
+    }    
+}
+.center_button {
+    display: block !important;
+    margin: 0 auto;
+}

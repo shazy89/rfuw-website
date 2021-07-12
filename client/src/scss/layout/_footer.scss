@@ -1,0 +1,67 @@
+.footer {
+
+    background-image: linear-gradient(
+        to right bottom,
+        rgba(rgb(187, 187, 187), 0.8),
+        rgba(rgb(143, 143, 143), 0.8)),
+     url('https://res.cloudinary.com/daiaiwq1q/image/upload/c_scale,w_1800/v1622836788/louis-reed-wSTCaQpiLtc-unsplash_xsgyy9.jpg');
+     @include respond(phone) {
+        background-image: linear-gradient(
+            to right bottom,
+            rgba(rgb(187, 187, 187), 0.8),
+            rgba(rgb(143, 143, 143), 0.8)),
+         url('https://res.cloudinary.com/daiaiwq1q/image/upload/c_scale,w_500/v1622836788/louis-reed-wSTCaQpiLtc-unsplash_xsgyy9.jpg');
+     }
+        background-size: cover;
+        background-position: center;
+        position: relative; 
+        &__header {
+            color: #ffff;
+            font-weight: 700;
+        }
+        &__bottom {
+           background-color: $rfuw-color-blue;
+           height: 5rem;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           &-text {
+            color: $rfuw-text-color !important;
+            font-weight: 300;
+            margin-bottom: 0 !important;
+           }
+        }
+        &__info {
+        &--box {
+            display: flex;
+            justify-content: space-around;
+            height: 100%;
+            @include respond(phone) {
+             display: block !important;
+              }
+        }
+        &--box1 {
+            width: 40%;
+            display: flex;
+            align-items: center;
+            @include respond(phone) {
+               width: 100% !important;
+                 }
+            
+        }
+        &--text{
+             width: 100%;
+             color: $rfuw-text-color;
+             margin-bottom: 0 !important;
+        } 
+
+        &--email {
+            color: $rfuw-text-color ;
+        }
+
+    }
+    &__form--box {
+        width: 70%;
+        margin: 0 auto;
+    }
+}

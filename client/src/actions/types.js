@@ -1,0 +1,45 @@
+export const SET_ALERT = "SET_ALERT";
+export const REMOVE_ALERT = "REMOVE_ALERT";
+
+export const GET_TB_HEADERS = "GET_TB_HEADERS";
+
+export const LOGIN_SUCCESS = "LOGIN_SUCCESS";
+export const LOGIN_FAIL = "LOGIN_FAIL";
+export const LOGOUT = "LOGOUT";
+
+export const USER_LOADED = "USER_LOADED";
+
+export const GET_NEWS = "GET_NEWS";
+export const REMOVE_NEWS = "REMOVE_NEWS";
+export const NEW_NEWS = "NEW_NEWS";
+export const EDIT_NEWS = "EDIT_NEWS";
+
+export const GET_EVENTS = "GET_EVENTS";
+export const EDIT_EVENTS = "EDIT_EVENTS";
+
+export const GET_SWITCHES = "GET_SWITCHES";
+export const NEW_SWITCHES = "NEW_SWITCHES";
+export const EDIT_SWITCHES = "EDIT_SWITCHES";
+
+export const GET_LIMITERS = "GET_LIMITERS";
+export const NEW_LIMITERS = "NEW_LIMITERS";
+export const EDIT_LIMITERS = "EDIT_LIMITERS";
+
+export const GET_CO_LIMITERS = "GET_CO_LIMITERS";
+export const NEW_CO_LIMITERS = "NEW_CO_LIMITERS";
+export const EDIT_CO_LIMITERS = "EDIT_CO_LIMITERS";
+
+export const GET_SW_DRIVERS = "GET_SW_DRIVERS";
+export const NEW_SW_DRIVERS = "NEW_SW_DRIVERS";
+export const EDIT_SW_DRIVERS = "EDIT_SW_DRIVERS";
+
+export const REMOVE_PRODUCT = "REMOVE_PRODUCT";
+
+export const GET_FEATURED_PRODUCTS = "GET_FEATURED_PRODUCTS";
+export const CLEAR_DATA = "CLEAR_DATA";
+
+export const UPLOAD_SWITCH_IMAGE = "UPLOAD_SWITCH_IMAGE";
+export const UPLOAD_LIMITER_IMAGE = "UPLOAD_LIMITER_IMAGE";
+export const UPLOAD_CO_LIMITER_IMAGE = "UPLOAD_CO_LIMITER_IMAGE";
+export const UPLOAD_DRIVERS_IMAGE = "UPLOAD_DRIVERS_IMAGE";
+export const UPLOAD_NEWS_IMAGE = "UPLOAD_NEWS_IMAGE";
