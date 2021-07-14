@@ -7,3 +7,23 @@ RFuW website is an Upwork project built for RFuW Engineering. The website has a 
 |                                                        RFuW Engineering Home Page                                                         |                                                      RFuW Engineering Products Table                                                      |
 | :---------------------------------------------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------------------------------------------------: |
 | ![](https://res.cloudinary.com/dytheecsk/image/upload/c_scale,w_700/v1626267728/projects/Screen_Shot_2021-07-13_at_4.22.44_PM_kafcge.png) | ![](https://res.cloudinary.com/dytheecsk/image/upload/c_scale,w_700/v1626267730/projects/Screen_Shot_2021-07-13_at_4.23.06_PM_zeg3s6.png) |
+
+## Backend
+
+- Javascript
+- Express Js
+- Node Js
+- Mongo Db
+- Heroku
+- Cloudinary
+
+## Frontend
+
+- Javascript
+- React
+- Redux
+- Netlify
+
+|                                                   RFuW Engineering Single Product Page                                                    |                                                        RFuW Engineering About Page                                                        |
+| :---------------------------------------------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------------------------------------------------: |
+| ![](https://res.cloudinary.com/dytheecsk/image/upload/c_scale,w_700/v1626267861/projects/Screen_Shot_2021-07-14_at_3.03.48_PM_wyc8kb.png) | ![](https://res.cloudinary.com/dytheecsk/image/upload/c_scale,w_700/v1626267739/projects/Screen_Shot_2021-07-13_at_4.23.18_PM_ntokka.png) |
