@@ -16,9 +16,8 @@ exports.addSwitch = async function ({ user, body }, res) {
 // api/switches
 exports.allSwitches = async function (req, res) {
   try {
-    const switches = await RFSwitch.find();
+    const switches = await RFSwitch.find().sort({ tableSpace: 1 });
     if (!switches) return res.status(400).json({ msg: "Not found" });
-    await switches.reverse();
     res.json(switches);
   } catch (err) {
     console.error(err);

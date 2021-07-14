@@ -11,7 +11,7 @@ const RfuNavbar = ({ isAuthenticated, logout }) => {
   const handleExpanded = () => {
     !toggle ? setToggle(true) : setToggle(false);
   };
-  console.log(toggle);
+
   return (
     <Navbar
       className="navbar_box_shadow"
@@ -69,7 +69,7 @@ const RfuNavbar = ({ isAuthenticated, logout }) => {
               as={NavLink}
               to="/switches"
             >
-              Rf Switches
+              RF Switches
             </NavDropdown.Item>
             <NavDropdown.Item
               eventKey="4.2"
@@ -78,7 +78,7 @@ const RfuNavbar = ({ isAuthenticated, logout }) => {
               as={NavLink}
               to="/limiters"
             >
-              Rf Limiters
+              RF Limiters
             </NavDropdown.Item>
             <NavDropdown.Item
               eventKey="4.3"

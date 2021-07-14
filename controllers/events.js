@@ -38,7 +38,6 @@ exports.allEvents = async function (req, res) {
 // api/events/:id
 exports.editEvent = async function ({ params: { id }, user, body }, res) {
   try {
-    console.log(body);
     const updateEvent = await Event.findOneAndUpdate(
       { _id: id }, // filter
       { $set: body }, // update

@@ -16,9 +16,9 @@ exports.addLimiter = async function ({ user, body }, res) {
 // api/limiters
 exports.allLimiters = async function (req, res) {
   try {
-    const limiters = await RfLimiter.find();
+    const limiters = await RfLimiter.find().sort({ tableSpace: 1 });
     if (!limiters) return res.status(400).json({ msg: "Not found" });
-    await limiters.reverse();
+
     res.json(limiters);
   } catch (err) {
     console.error(err);

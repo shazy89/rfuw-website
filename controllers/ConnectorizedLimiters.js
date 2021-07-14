@@ -16,7 +16,9 @@ exports.addConLimiter = async function ({ user, body }, res) {
 // api/limiters
 exports.allConLimiters = async function (req, res) {
   try {
-    const limiters = await ConnectorizedLimiters.find();
+    const limiters = await ConnectorizedLimiters.find().sort({
+      tableSpace: -1
+    });
     if (!limiters) return res.status(400).json({ msg: "Not found" });
     await limiters.reverse();
     res.json(limiters);
@@ -92,3 +94,20 @@ exports.coLimiterImageUpload = async function (
     res.status(500).send("Server Error");
   }
 };
+
+// exports.newField = async function (req, res) {
+//   try {
+//     const newField = await ConnectorizedLimiters.aggregate([
+//       {
+//         $addFields: {
+//           tableSpace: "2"
+//         }
+//       },
+//       { $out: "connectorizedlimiters" }
+//     ]);
+//
+//     res.json("OK!");
+//   } catch (error) {
+//     console.error(error);
+//   }
+// };

@@ -63,7 +63,7 @@ const AboutSection = ({
                 rel="noreferrer"
                 target="_blank"
               >
-                Download .PDF <Download style={{ color: "grey" }} size={20} />
+                Datasheet <Download style={{ color: "grey" }} size={20} />
               </a>
             )}
             {dfxUrl && (

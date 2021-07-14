@@ -511,6 +511,9 @@ body {
 .row_options {
   height: 100%; }
 
+.header__white {
+  color: #fff; }
+
 .about__img {
   width: 100%;
   height: 100%; }

@@ -105,7 +105,7 @@ const SharedFields = ({ onChange, edit, formData }) => {
         </Form.Group>
       </Form.Row>
       <Form.Row>
-        <Form.Group as={Col} md="6" controlId="s2pUrl">
+        <Form.Group as={Col} md="4" controlId="s2pUrl">
           <Form.Label>S2P Url</Form.Label>
           <Form.Control
             className={!edit ? "font__size-2" : null}
@@ -115,13 +115,23 @@ const SharedFields = ({ onChange, edit, formData }) => {
             onChange={onChange}
           />
         </Form.Group>
-        <Form.Group as={Col} md="6" controlId="buyNowUrl">
+        <Form.Group as={Col} md="4" controlId="buyNowUrl">
           <Form.Label>Buy Now Url</Form.Label>
           <Form.Control
             className={!edit ? "font__size-2" : null}
             type="text"
             name="buyNowUrl"
             value={formData.buyNowUrl}
+            onChange={onChange}
+          />
+        </Form.Group>
+        <Form.Group as={Col} md="4" controlId="tableSpace">
+          <Form.Label>Table Space</Form.Label>
+          <Form.Control
+            className={!edit ? "font__size-2" : null}
+            type="text"
+            name="tableSpace"
+            value={formData.tableSpace}
             onChange={onChange}
           />
         </Form.Group>

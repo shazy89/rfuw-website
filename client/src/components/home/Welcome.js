@@ -7,9 +7,6 @@ const Welcome = ({ featuredProducts, loading }) => {
   return (
     <section className="u-padding--3">
       <div className="u-margin-top-2">
-        <h2 className="font__size-5 text-center welcome__header">
-          Welcome to RFuW Engineering Pte.Ltd
-        </h2>
         <p className="welcome__text u-margin-top-2 font__size-2">
           Purveyors of the industry's leading RF & Microwave Switches and
           Limiters brought to you from the world's most business friendly

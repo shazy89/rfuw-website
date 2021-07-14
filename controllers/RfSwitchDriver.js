@@ -17,7 +17,8 @@ exports.addSwitchDriver = async function ({ user, body }, res) {
 // api/swdrivers
 exports.allSwDrivers = async function (req, res) {
   try {
-    const drivers = await RfSwitchDriver.find();
+    const drivers = await RfSwitchDriver.find().sort({ tableSpace: -1 });
+
     if (!drivers) return res.status(400).json({ msg: "Not found" });
     await drivers.reverse();
     res.json(drivers);

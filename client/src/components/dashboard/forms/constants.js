@@ -19,7 +19,8 @@ export const switchesInitialState = {
   ip3: "",
   imageUrl:
     "https://res.cloudinary.com/daiaiwq1q/image/upload/c_scale,w_774/v1622480962/News/RFuWLogo_qqly5e.png",
-  publicId: "News/RFuWLogo_qqly5e.png"
+  publicId: "News/RFuWLogo_qqly5e.png",
+  tableSpace: "2"
 };
 export const limitersubutialState = {
   model: "",
@@ -43,7 +44,8 @@ export const limitersubutialState = {
   recoveryTime: "",
   imageUrl:
     "https://res.cloudinary.com/daiaiwq1q/image/upload/c_scale,w_774/v1622480962/News/RFuWLogo_qqly5e.png",
-  publicId: "News/RFuWLogo_qqly5e.png"
+  publicId: "News/RFuWLogo_qqly5e.png",
+  tableSpace: "2"
 };
 export const swDriversInitialState = {
   model: "",
@@ -63,7 +65,8 @@ export const swDriversInitialState = {
   sourceMa: "",
   imageUrl:
     "https://res.cloudinary.com/daiaiwq1q/image/upload/c_scale,w_774/v1622480962/News/RFuWLogo_qqly5e.png",
-  publicId: "News/RFuWLogo_qqly5e.png"
+  publicId: "News/RFuWLogo_qqly5e.png",
+  tableSpace: "2"
 };
 export const coLimitersInitialState = {
   model: "",
@@ -87,5 +90,6 @@ export const coLimitersInitialState = {
   recoveryTime: "",
   imageUrl:
     "https://res.cloudinary.com/daiaiwq1q/image/upload/c_scale,w_774/v1622480962/News/RFuWLogo_qqly5e.png",
-  publicId: "News/RFuWLogo_qqly5e.png"
+  publicId: "News/RFuWLogo_qqly5e.png",
+  tableSpace: "2"
 };

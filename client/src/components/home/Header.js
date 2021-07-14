@@ -6,14 +6,17 @@ const Header = ({ loadingNews, news }) => {
     <>
       <header className="home__header">
         <div className="home__header-text-box">
-          <h1 className="home__header-primary">
+          <h1 className="font__size-5 text-center header__white">
+            Welcome to RFuW Engineering Pte. Ltd.
+          </h1>
+          <h2 className="home__header-primary">
             <span className="home__header-primary--sub font__size-2">
               understand what the customer values:{" "}
             </span>
             <span className="home__header-primary--main">
               Performance, Quality, Pride &amp; Reliable Service{" "}
             </span>
-          </h1>
+          </h2>
           <Link
             to="/about"
             className="u-margin-top-2 header__button header__button--animated u-padding--05"

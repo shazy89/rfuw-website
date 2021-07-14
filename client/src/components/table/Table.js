@@ -2,7 +2,7 @@ import React from "react";
 import { v4 as uuidv4 } from "uuid";
 import { Table as RfuWTable } from "react-bootstrap";
 import { Download } from "react-feather";
-import pdF from "css/assets/files/RFD2T5N200-702DSRFuWRevB.pdf";
+
 const Table = ({ headers, content }) => {
   const tBody =
     content &&
