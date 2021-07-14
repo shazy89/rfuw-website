@@ -1,6 +1,6 @@
 # [RFuW Engineering Pte. Ltd.](https://www.rfuw-engineering.com/)
 
-RFuW website is an Upwork project built for the RFuW Engineering. The website has a Dashboard, by using the Login page you can access and manage it. There are 7 pages, Home, Products, Single Product, About Us, News, Sales Rep, and Contact Us. If you’re logged in, you can add, edit, and delete products. Also, you can edit the events section and you can manage the news. CRUD features are allow just for the website owners, users can visit the static pages and gain understanding about the RFuW Engineering products.
+RFuW website is an Upwork project built for RFuW Engineering. The website has a Dashboard, by using the Login page you can access and manage it. There are 7 pages, Home, Products, Single Product, About Us, News, Sales Rep, and Contact Us. If you’re logged in, you can add, edit, and delete products. Also, you can edit the events section and you can manage the news. CRUD features are accessible only for the website owners, users can visit the static pages and gain an understanding of the RFuW Engineering products.
 
 ## [Lern more about RFuW Engineering](https://www.rfuw-engineering.com/about)
 
