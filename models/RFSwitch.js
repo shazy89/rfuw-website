@@ -22,6 +22,7 @@ const RfSwitch = new Schema({
   iso: { type: String },
   ip3: { type: String },
   status: { type: String },
+  tableSpace: { type: String },
   date: { type: Date, default: Date.now }
 });
 

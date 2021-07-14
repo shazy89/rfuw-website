@@ -19,6 +19,7 @@ const RfSwitchDriver = new Schema({
   voltage2: { type: String },
   sinkMa: { type: String },
   sourceMa: { type: String },
+  tableSpace: { type: String },
   date: { type: Date, default: Date.now }
 });
 

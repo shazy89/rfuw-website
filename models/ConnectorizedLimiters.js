@@ -23,6 +23,7 @@ const ConnectorizedLimiters = new Schema({
   spikeLeakage: { type: String },
   recoveryTime: { type: String },
   status: { type: String },
+  tableSpace: { type: String },
   date: { type: Date, default: Date.now }
 });
 

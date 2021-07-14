@@ -81,6 +81,7 @@ module.exports = function (app) {
     RfSwitchDriver.addSwitchDriver
   );
   app.get("/api/swdrivers", RfSwitchDriver.allSwDrivers);
+
   app.get("/api/swdrivers/:id", RfSwitchDriver.swDriverById);
   app.put("/api/swdrivers/:id", requireAuth, RfSwitchDriver.swDriverEdit);
   app.put(
